@@ -75,15 +75,21 @@ A RESTful API for a basic activity booking application built with Node.js, Expre
 - **Create Activity**: `POST /api/activities`
   - Admin only (requires authentication)
   - Body: `{ "title": "Event Name", "description": "Event details", "location": "Event venue", "dateTime": "2023-12-15T14:00:00.000Z" }`
+  - Headers:
+    Authorization: Bearer **JWT Token**
 
 ### Bookings
 
 - **Book an Activity**: `POST /api/bookings`
   - Requires authentication
   - Body: `{ "activityId": "activity_id_here" }`
+  - Headers:
+    Authorization: Bearer **JWT Token**
 
 - **Get User's Bookings**: `GET /api/bookings/my-bookings`
   - Requires authentication
+  - Headers:
+    Authorization: Bearer **JWT Token**
 
 ## Testing
 
