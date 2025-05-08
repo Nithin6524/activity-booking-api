@@ -113,4 +113,16 @@ activity-booking-api/
 └── README.md           # Project documentation
 ```
 
+## Live API
+
+The API is deployed and accessible at:
+https://activity-booking-api-production.up.railway.app
+
+You can test the endpoints using this base URL instead of localhost.
+
+Example:
+- Register: POST https://activity-booking-api-production.up.railway.app/api/auth/register
+- Login: POST https://activity-booking-api-production.up.railway.app/api/auth/login
+- List Activities: GET https://activity-booking-api-production.up.railway.app/api/activities
+
 
